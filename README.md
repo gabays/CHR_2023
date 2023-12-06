@@ -17,6 +17,13 @@ jupyter notebook
 
 Open the `CHR_digital_diplomacy.ipynb` file and follow the steps
 
+# Credits
+
+- Kraken: B. Kiessling
+- YALTAi: Th. Clérice
+- SegmOnto: A. Pinche
+- TEI conversion: K. Christensen
+
 # Cite 
 
 ```bibtex
