@@ -58,6 +58,8 @@ if __name__ == "__main__":
                     [f for f in d.iterdir() if f.suffix==".xml"]) # relative filepath for file
             for d in Path(config.get(("data"))["path"]).iterdir() if d.is_dir()]
 
+    print("It starts")
+
     for d in docs:
         # instantiate the class TEI for the current document in the loop
         tree = TEI(d.doc_name, d.filepaths)
@@ -83,5 +85,7 @@ if __name__ == "__main__":
             tree.build_body()
             print("|________finished in {:.4f} seconds".format(perf_counter() - t0))
     
+        print("We save the file.")
+
         # -- output XML-TEI file --
         Write(d.doc_name, tree.root).write()
