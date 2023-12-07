@@ -61,6 +61,7 @@ if __name__ == "__main__":
     print("It starts")
 
     for d in docs:
+        print("Doc being processed")
         # instantiate the class TEI for the current document in the loop
         tree = TEI(d.doc_name, d.filepaths)
         tree.build_tree()
